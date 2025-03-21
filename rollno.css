@@ -51,10 +51,12 @@ input {
     width: 30%;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-.college{
+
+.college {
     text-align: center;
     font-size: 1.2em;
 }
+
 input:focus {
     border-color: #00ced1;
     box-shadow: 0 0 8px rgba(0, 206, 209, 0.5);
@@ -84,8 +86,62 @@ input:focus {
     transform: translateY(0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-#imeg img{
+
+#imeg img {
     height: 100px;
     width: 100px;
     object-fit: contain;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    input {
+        width: 80%;  /* Increase input field width for better accessibility on smaller screens */
+        font-size: 1em;
+    }
+
+    #submitbtn {
+        width: 80%;
+        font-size: 1.1em;
+    }
+
+    #imeg img {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;  /* Full width input field on very small screens */
+        font-size: 1em;
+    }
+
+    #submitbtn {
+        width: 100%;  /* Full width button on very small screens */
+        font-size: 1.1em;
+    }
+
+    #imeg img {
+        height: 60px;
+        width: 60px;
+    }
 }
