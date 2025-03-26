@@ -11,6 +11,9 @@ submitbtn.onclick = function(){
     else if(acet.checked){
         output.innerHTML = `<img src="https://info.aec.edu.in/ACET/StudentPhotos/${rollno}.jpg">`;
     }
+  else if (dp.checked){
+   output.innerHTML = `<img src="https://info.aec.edu.in/ACET/StudentPhotos/${rollno}.jpg">`;
+}
     else{
         alert("select the collage");
     }
