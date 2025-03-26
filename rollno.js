@@ -2,6 +2,7 @@ let submitbtn = document.getElementById('submitbtn');
 let output = document.getElementById('imge');
 const aec = document.getElementById('aec');
 const acet = document.getElementById('acet');
+const dp = document.getElementById('dp');
 
 submitbtn.onclick = function(){
     let rollno = document.getElementById('rollno').value;
@@ -12,7 +13,7 @@ submitbtn.onclick = function(){
         output.innerHTML = `<img src="https://info.aec.edu.in/ACET/StudentPhotos/${rollno}.jpg">`;
     }
   else if (dp.checked){
-   output.innerHTML = `<img src="https://info.aec.edu.in/ACET/StudentPhotos/${rollno}.jpg">`;
+   output.innerHTML = `<img src="https://info.aec.edu.in/saipoly/StudentPhotos/${rollno}.jpg" >`;
 }
     else{
         alert("select the collage");
